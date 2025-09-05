@@ -9,8 +9,8 @@ services:
       # - "80:80"  # Removed: Traefik handles routing
     environment:
       - NODE_ENV=production
-    networks:
-      - web
+    # networks:
+      # - web  # Removed: using default network
     labels:
       # Dokploy labels for automatic configuration
       - "traefik.enable=true"
@@ -29,6 +29,6 @@ services:
       retries: 3
       start_period: 30s
 
-networks:
-  web:
-    external: true
+# networks:
+  # web:
+    # external: true
