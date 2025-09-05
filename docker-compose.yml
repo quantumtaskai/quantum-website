@@ -5,8 +5,8 @@ services:
     build: .
     container_name: quantumtaskai-website
     restart: unless-stopped
-    ports:
-      - "80:80"
+    # ports:
+      # - "80:80"  # Removed: Traefik handles routing
     environment:
       - NODE_ENV=production
     networks:
