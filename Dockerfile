@@ -30,6 +30,12 @@ RUN echo 'server {' > /etc/nginx/conf.d/default.conf && \
     echo '        add_header Cache-Control "public, immutable";' >> /etc/nginx/conf.d/default.conf && \
     echo '    }' >> /etc/nginx/conf.d/default.conf && \
     echo '    ' >> /etc/nginx/conf.d/default.conf && \
+    echo '    # JSON files - shorter cache for blog data' >> /etc/nginx/conf.d/default.conf && \
+    echo '    location ~* \.(json)$ {' >> /etc/nginx/conf.d/default.conf && \
+    echo '        expires 10m;' >> /etc/nginx/conf.d/default.conf && \
+    echo '        add_header Cache-Control "public";' >> /etc/nginx/conf.d/default.conf && \
+    echo '    }' >> /etc/nginx/conf.d/default.conf && \
+    echo '    ' >> /etc/nginx/conf.d/default.conf && \
     echo '    # HTML files - shorter cache' >> /etc/nginx/conf.d/default.conf && \
     echo '    location ~* \.(html|htm)$ {' >> /etc/nginx/conf.d/default.conf && \
     echo '        expires 1h;' >> /etc/nginx/conf.d/default.conf && \
