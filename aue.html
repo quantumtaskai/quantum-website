@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Tasks AI - Chat Assistant</title>
+    <meta name="description" content="Chat with Quantum Tasks AI - Get instant support for AI and Cybersecurity solutions">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8fafc;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0;
+            margin: 0;
+            background-color: #f8fafc;
+        }
+
+        .chat-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .iframe-container {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        #chatWidget {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .chat-main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-component">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo-section">
+                    <img src="img/logo.png" alt="Quantum Tasks AI" class="logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <nav class="header-nav" id="header-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="digital-branding.html" class="nav-link">AI Digital Branding</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="https://ai.quantumtaskai.com/agents/" class="nav-link">AI Marketplace</a>
+                </nav>
+                <button class="mobile-nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="chat-main">
+        <div class="chat-container">
+            <div class="iframe-container">
+                <iframe
+                    src="https://meet.eself.ai/108315232292977188132/talk-to-agent?aiclid=3hIpww4j&flow_id=agent-5"
+                    id="chatWidget"
+                    frameborder="0"
+                    scrolling="yes"
+                    allowtransparency="true">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
