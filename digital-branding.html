@@ -36,9 +36,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-    
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icon Size Adjustments -->
+    <style>
+        .service-icon i { font-size: 2.5rem; }
+        .choice-icon i { font-size: 2.5rem; }
+        .contact-icon i { font-size: 1.25rem; }
+        .trust-badge i { font-size: 1rem; }
+        .section-badge i { font-size: 1.1rem; }
+        .race-phase i { font-size: 2rem; }
+        .cta-feature i { font-size: 1rem; margin-right: 0.5rem; color: var(--primary); }
+        .cta-btn i { font-size: 1rem; margin-right: 0.5rem; }
+        .footer-contact i { font-size: 0.9rem; margin-right: 0.35rem; }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -70,7 +86,7 @@
             <div class="hero-container">
                 <!-- Trust Badge -->
                 <div class="trust-badge">
-                    <span class="trust-badge-emoji">✨</span>
+                    <i class="fas fa-star"></i>
                     <span>Trusted Digital Brand Partner</span>
                 </div>
 
@@ -134,7 +150,7 @@
                 <!-- Section Header -->
                 <div class="section-header">
                     <div class="section-badge">
-                        <span class="section-badge-icon">🎯</span>
+                        <i class="fas fa-bullseye"></i>
                         <span class="section-badge-text">Why Choose Us</span>
                     </div>
                     <h2 class="section-title">
@@ -147,21 +163,21 @@
 
                 <div class="why-choose-grid">
                     <div class="choice-card">
-                        <div class="choice-icon">🤖</div>
+                        <div class="choice-icon"><i class="fas fa-robot"></i></div>
                         <h3 class="choice-title">Data-Driven Brand Intelligence</h3>
                         <p class="choice-description">
                             Advanced analytics and automation for real-time audience insights, trend forecasting, and competitive intelligence. Our smart systems continuously optimize your strategy based on performance data.
                         </p>
                     </div>
                     <div class="choice-card">
-                        <div class="choice-icon">🌐</div>
+                        <div class="choice-icon"><i class="fas fa-globe"></i></div>
                         <h3 class="choice-title">Comprehensive Digital Automation</h3>
                         <p class="choice-description">
                             End-to-end digital presence management with smart automation, content optimization, intelligent scheduling, SEO enhancement, and reputation management for maximum efficiency and impact.
                         </p>
                     </div>
                     <div class="choice-card">
-                        <div class="choice-icon">⚡</div>
+                        <div class="choice-icon"><i class="fas fa-bolt"></i></div>
                         <h3 class="choice-title">Smart Personalization & Optimization</h3>
                         <p class="choice-description">
                             Intelligent systems that learn your brand identity, automatically adapt strategies for your market, and continuously optimize campaigns based on performance data and market insights.
@@ -176,7 +192,7 @@
             <div class="section-container">
                 <div class="section-header">
                     <div class="section-badge">
-                        <span class="section-badge-icon">📋</span>
+                        <i class="fas fa-clipboard-list"></i>
                         <span class="section-badge-text">Our Process</span>
                     </div>
                     <h2 class="section-title">
@@ -250,7 +266,7 @@
                     <div class="race-grid">
                         <div class="race-card">
                             <div class="race-phase">
-                                <span class="race-icon">📢</span>
+                                <i class="fas fa-bullhorn"></i>
                                 <h4>Reach</h4>
                             </div>
                             <div class="race-focus">AI-Powered Visibility</div>
@@ -258,7 +274,7 @@
                         </div>
                         <div class="race-card">
                             <div class="race-phase">
-                                <span class="race-icon">💬</span>
+                                <i class="fas fa-comments"></i>
                                 <h4>Act</h4>
                             </div>
                             <div class="race-focus">Intelligent Engagement</div>
@@ -266,7 +282,7 @@
                         </div>
                         <div class="race-card">
                             <div class="race-phase">
-                                <span class="race-icon">🎯</span>
+                                <i class="fas fa-bullseye"></i>
                                 <h4>Convert</h4>
                             </div>
                             <div class="race-focus">Smart Conversions</div>
@@ -274,7 +290,7 @@
                         </div>
                         <div class="race-card">
                             <div class="race-phase">
-                                <span class="race-icon">❤️</span>
+                                <i class="fas fa-heart"></i>
                                 <h4>Engage</h4>
                             </div>
                             <div class="race-focus">AI-Driven Loyalty</div>
@@ -296,42 +312,42 @@
                 </p>
                 <div class="branding-services-grid">
                     <div class="service-card">
-                        <div class="service-icon">🎨</div>
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
                         <h3 class="service-title">Brand Discovery & Smart Identity Design</h3>
                         <p class="service-description">
                             Complete brand audit enhanced with AI insights, strategic identity creation, and adaptive design systems that evolve with market trends and audience data.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">📱</div>
+                        <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
                         <h3 class="service-title">Strategic Platform Management & Automation</h3>
                         <p class="service-description">
                             Smart platform selection and optimization, automated content distribution, intelligent scheduling, and performance optimization across social media, websites, and digital touchpoints.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🔍</div>
+                        <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
                         <h3 class="service-title">Advanced Content & Marketing Automation</h3>
                         <p class="service-description">
                             AI-enhanced content creation, automated SEO optimization, intelligent ad targeting and social media management with real-time performance adjustments for maximum impact.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">📢</div>
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
                         <h3 class="service-title">Influencer Partnerships & Digital PR</h3>
                         <p class="service-description">
                             Strategic influencer discovery and matching, automated PR campaign management, smart media outreach, and comprehensive relationship management for maximum brand amplification.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🎯</div>
+                        <div class="service-icon"><i class="fas fa-bullseye"></i></div>
                         <h3 class="service-title">Brand Consistency & Messaging Systems</h3>
                         <p class="service-description">
                             Unified brand guidelines with automated enforcement, intelligent messaging frameworks, smart visual asset management, and consistent brand voice across all platforms.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">📊</div>
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                         <h3 class="service-title">Predictive AI Analytics & Automated Insights</h3>
                         <p class="service-description">
                             Real-time predictive analytics, automated performance optimization, AI-generated insights and recommendations, with intelligent forecasting and proactive strategy adjustments.
@@ -358,15 +374,15 @@
                         <!-- Features List -->
                         <div class="cta-features">
                             <div class="cta-feature">
-                                <span class="feature-icon">✓</span>
+                                <i class="fas fa-check"></i>
                                 <span>Free comprehensive brand analysis</span>
                             </div>
                             <div class="cta-feature">
-                                <span class="feature-icon">✓</span>
+                                <i class="fas fa-check"></i>
                                 <span>Personalized growth automation roadmap</span>
                             </div>
                             <div class="cta-feature">
-                                <span class="feature-icon">✓</span>
+                                <i class="fas fa-check"></i>
                                 <span>Custom strategy proposal in 24 hours</span>
                             </div>
                         </div>
@@ -374,7 +390,7 @@
                         <!-- CTA Buttons -->
                         <div class="cta-buttons">
                             <a href="https://form.jotform.com/252121444918050" target="_blank" class="cta-btn secondary">
-                                💬 Contact Us Directly
+                                <i class="fas fa-comments"></i> Contact Us Directly
                             </a>
                         </div>
                     </div>
@@ -386,7 +402,7 @@
                         <!-- Contact Item -->
                         <div class="contact-item">
                             <div class="contact-icon">
-                                ✉️
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-details">
                                 <h4>Email Address</h4>
@@ -426,10 +442,10 @@
                     
                     <div class="footer-contact">
                         <a href="mailto:abhay@quantumtaskai.com" class="footer-contact-item">
-                            📧 abhay@quantumtaskai.com
+                            <i class="fas fa-envelope"></i> abhay@quantumtaskai.com
                         </a>
                         <span class="footer-contact-item">
-                            📍 Dubai, UAE
+                            <i class="fas fa-location-dot"></i> Dubai, UAE
                         </span>
                     </div>
                 </div>
