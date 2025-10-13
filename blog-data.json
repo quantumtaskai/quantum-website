@@ -1,6 +1,21 @@
 {
   "posts": [
     {
+      "id": "ai-powered-digital-marketing-2025",
+      "title": "AI-Powered Digital Marketing: Transforming Customer Engagement in 2025",
+      "slug": "ai-powered-digital-marketing-2025",
+      "excerpt": "Discover how artificial intelligence is transforming digital marketing through data-driven insights, automated campaigns, and personalized customer experiences.",
+      "content": "Artificial intelligence is transforming digital marketing by harnessing data-driven insights, automating repetitive tasks, and enabling marketers to create highly targeted campaigns that resonate with customers. AI's learning capabilities—powered by machine learning and natural language processing—allow businesses to analyze audiences, craft engaging content, and optimize strategies faster than ever before.",
+      "author": "Quantum Tasks AI Team",
+      "publishDate": "2025-01-20",
+      "category": "ai-automation",
+      "tags": ["AI", "Digital Marketing", "Customer Engagement", "Automation", "Personalization"],
+      "readTime": "10 min read",
+      "featured": true,
+      "image": "img/blog/ai-digital-marketing.png",
+      "metaDescription": "Learn how AI is transforming digital marketing with personalized campaigns, automated content creation, and data-driven customer engagement strategies in 2025."
+    },
+    {
       "id": "ai-agents-revolutionize-task-management",
       "title": "How AI Agents Revolutionize Task Management in 2025",
       "slug": "ai-agents-revolutionize-task-management",

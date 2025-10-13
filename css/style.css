@@ -3366,6 +3366,8 @@ body.blog-context {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
 }
+
+.article-title {
     font-size: 22px;
     font-weight: 750;
     color: var(--text-primary);
@@ -3838,7 +3840,8 @@ body.blog-context {
 /* Enhanced Article Image */
 .article-image-section {
     margin-bottom: var(--space-xxxl);
-    padding: 0 var(--space-lg);
+    margin-left: -28px;
+    margin-right: -28px;
 }
 
 .article-image {
@@ -3846,6 +3849,14 @@ body.blog-context {
     overflow: hidden;
     box-shadow: var(--shadow-xl);
     position: relative;
+    width: 100%;
+}
+
+.article-image img,
+.article-image .featured-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .article-image-placeholder {
@@ -3948,6 +3959,8 @@ body.blog-context {
     color: var(--primary);
     font-weight: var(--font-semibold);
 }
+
+.article-content li {
     margin-bottom: var(--space-sm);
     font-size: var(--text-lg);
 }
@@ -4047,8 +4060,6 @@ body.blog-context {
     background: var(--primary);
     color: white;
     border-color: var(--primary);
-}
-    color: var(--primary);
 }
 
 .article-content pre {
@@ -4280,6 +4291,22 @@ body.blog-context {
     .article-image-placeholder {
         height: 200px;
     }
+}
+
+/* Responsive adjustments for full-width blog images */
+@media (max-width: 480px) {
+    .article-image-section {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/* Ensure full-width images work with both real images and placeholders */
+.article-image .featured-image,
+.article-image .article-image-placeholder {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 

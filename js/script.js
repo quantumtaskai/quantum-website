@@ -572,7 +572,11 @@ let searchQuery = '';
 // Load blog data
 async function loadBlogData() {
     try {
-        const response = await fetch('/blog-data.json');
+        // Check if we're on a blog post page (in /blog/ directory)
+        const isInBlogDirectory = window.location.pathname.includes('/blog/');
+        const dataPath = isInBlogDirectory ? '../blog-data.json' : 'blog-data.json';
+        
+        const response = await fetch(dataPath);
         blogData = await response.json();
         return blogData;
     } catch (error) {
